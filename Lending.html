@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.2">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang=</p>
+<p class="p1">"ru"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset=</p>
+<p class="p1">"UTF-8"&gt;</p>
+<p class="p1">&lt;meta name=</p>
+<p class="p1">"viewport" content=</p>
+<p class="p1">"width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1">&lt;title&gt;Курс по трейдингу - Выбери свой путь к прибыли&lt;/title&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">* { margin: 0; padding: 0; box-sizing: border-box; }</p>
+<p class="p1">body { font-family: 'Arial'</p>
+<p class="p1">, sans-serif; line-height: 1.6; color: #333; }</p>
+<p class="p1">.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }</p>
+<p class="p1">/* Header */</p>
+<p class="p1">header { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: wh</p>
+<p class="p1">nav { display: flex; justify-content: space-between; align-items: center; }</p>
+<p class="p1">.logo { font-size: 1.8rem; font-weight: bold; }</p>
+<p class="p1">.cta-button { background: #ff6b35; color: white; padding: 12px 30px; border: none</p>
+<p class="p1">.cta-button:hover { transform: scale(1.05); }</p>
+<p class="p1">/* Hero */</p>
+<p class="p1">#hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('data:</p>
+<p class="p1">#hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }</p>
+<p class="p1">#hero p { font-size: 1.3rem; margin-bottom: 2rem; max-width: 600px; margin-left:</p>
+<p class="p1">/* Sections */</p>
+<p class="p1">section { padding: 80px 0; }</p>
+<p class="p1">#features { background: #f8f9fa; }</p>
+<p class="p1">#pricing { background: white; }</p>
+<p class="p1">#testimonials { background: #1e3c72; color: white; }</p>
+<p class="p1">#cta { background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%); color: whit</p>
+<p class="p1">h2 { font-size: 2.5rem; text-align: center; margin-bottom: 3rem; color: #1e3c72;</p>
+<p class="p1">/* Pricing Cards */</p>
+<p class="p1">.pricing-container { display: grid; grid-template-columns: repeat(auto-fit, minma</p>
+<p class="p1">.pricing-card { background: white; border-radius: 15px; padding: 2.5rem; box-shad</p>
+<p class="p1">.pricing-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(</p>
+<p class="p1">.pricing-card.popular { border: 3px solid #ff6b35; transform: scale(1.05); }</p>
+<p class="p1">.pricing-card.popular .card-header { background: linear-gradient(135deg, #ff6b35</p>
+<p class="p1">.card-header { background: #f8f9fa; padding: 1.5rem; border-radius: 10px 10px 0 0</p>
+<p class="p1">.price { font-size: 2.5rem; font-weight: bold; color: #1e3c72; }</p>
+<p class="p1">.discount { font-size: 1rem; color: #ff6b35; margin-left: 0.5rem; }</p>
+<p class="p1">.features-list { list-style: none; text-align: left; margin-bottom: 2rem; }</p>
+<p class="p1">.features-list li { padding: 0.8rem 0; border-bottom: 1px solid #eee; }</p>
+<p class="p1">.features-list li:last-child { border-bottom: none; }</p>
+<p class="p1">.features-list .included { color: #28a745; font-weight: bold; }</p>
+<p class="p1">.features-list .excluded { color: #dc3545; text-decoration: line-through; }</p>
+<p class="p1">.buy-button { width: 100%; padding: 15px; font-size: 1.2rem; }</p>
+<p class="p1">/* Features Grid */</p>
+<p class="p1">.features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(25</p>
+<p class="p1">.feature-card { background: white; padding: 2rem; border-radius: 10px; text-align</p>
+<p class="p1">/* Testimonials */</p>
+<p class="p1">.testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minma</p>
+<p class="p1">.testimonial { background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 1</p>
+<p class="p1">/* Smooth scroll */</p>
+<p class="p1">html { scroll-behavior: smooth; }</p>
+<p class="p1">nav a { color: white; text-decoration: none; margin-left: 2rem; }</p>
+<p class="p1">@media (max-width: 768px) {</p>
+<p class="p1">#hero h1 { font-size: 2.5rem; }</p>
+<p class="p1">.pricing-container { grid-template-columns: 1fr; }</p>
+<p class="p1">.pricing-card.popular { transform: none; }</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1">&lt;!-- Header --&gt;</p>
+<p class="p1">&lt;header&gt;</p>
+<p class="p1">&lt;nav class=</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">"container"&gt;</p>
+<p class="p1">"logo"&gt;Трейдинг Pro&lt;/div&gt;</p>
+<p class="p1">&lt;a href=</p>
+<p class="p1">&lt;a href=</p>
+<p class="p1">"#pricing"&gt;Тарифы&lt;/a&gt;</p>
+<p class="p1">"#features"&gt;Что внутри&lt;/a&gt;</p>
+<p class="p1">&lt;a href=</p>
+<p class="p1">"#testimonials"&gt;Отзывы&lt;/a&gt;</p>
+<p class="p1">&lt;button class=</p>
+<p class="p1">"cta-button" onclick=</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/nav&gt;</p>
+<p class="p1">&lt;/header&gt;</p>
+<p class="p1">"document.getElementById('pricing').sc</p>
+<p class="p1">&lt;!-- Hero --&gt;</p>
+<p class="p1">&lt;section id=</p>
+<p class="p1">"hero"&gt;</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"container"&gt;</p>
+<p class="p1">&lt;h1&gt;Стань прибыльным трейдером&lt;/h1&gt;</p>
+<p class="p1">&lt;p&gt;Получи структурированные знания, персональную обратную связь и готовые стр</p>
+<p class="p1">&lt;button class=</p>
+<p class="p1">"cta-button" style=</p>
+<p class="p1">"font-size: 1.3rem; padding: 18px 40px;" onc</p>
+<p class="p1">Смотреть тарифы ⭐</p>
+<p class="p1">&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;!-- Features --&gt;</p>
+<p class="p1">&lt;section id=</p>
+<p class="p1">"features"&gt;</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"container"&gt;</p>
+<p class="p1">&lt;h2&gt;Что ты получишь&lt;/h2&gt;</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"features-grid"&gt;</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"feature-card"&gt;</p>
+<p class="p1">&lt;h3&gt; 20+ видеоуроков&lt;/h3&gt;</p>
+<p class="p1">&lt;p&gt;Полный курс по техническому анализу, Price Action и психологии тре</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"feature-card"&gt;</p>
+<p class="p1">&lt;h3&gt;✅ Готовые стратегии&lt;/h3&gt;</p>
+<p class="p1">&lt;p&gt;Индикаторы, настройки, правила входа/выхода с примерами сделок&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"feature-card"&gt;</p>
+<p class="p1">&lt;h3&gt; Практика с проверкой&lt;/h3&gt;</p>
+<p class="p1">&lt;p&gt;Домашние задания, разборы сделок, чек-листы перед каждой сделкой&lt;/</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"feature-card"&gt;</p>
+<p class="p1">&lt;h3&gt; Закрытое комьюнити&lt;/h3&gt;</p>
+<p class="p1">&lt;p&gt;Чаты учеников, еженедельные разборы, личная поддержка&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;!-- Pricing --&gt;</p>
+<p class="p1">&lt;section id=</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"pricing"&gt;</p>
+<p class="p1">"container"&gt;</p>
+<p class="p1">&lt;h2&gt;Выбери свой тариф&lt;/h2&gt;</p>
+<p class="p1">&lt;p style=</p>
+<p class="p1">"text-align: center; font-size: 1.2rem; margin-bottom: 3rem; color:</p>
+<p class="p1">&lt;strong&gt;СТАНДАРТ&lt;/strong&gt; — самый популярный выбор 73% учеников</p>
+<p class="p1">&lt;/p&gt;</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"pricing-container"&gt;</p>
+<p class="p1">&lt;!-- Basic --&gt;</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"pricing-card"&gt;</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"card-header"&gt;</p>
+<p class="p1">&lt;h3&gt;БАЗОВЫЙ&lt;/h3&gt;</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"price"&gt;25 000 ₽ &lt;span class=</p>
+<p class="p1">"discount"&gt;15 000 ₽&lt;/span</p>
+<p class="p1">&lt;small&gt;Для самостоятельных с дисциплиной&lt;/small&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;ul class=</p>
+<p class="p1">"features-list"&gt;</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">"included"&gt;✅ Все видеоуроки (15-20 шт)&lt;/li&gt;</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">"included"&gt;✅ Чек-листы и шаблоны&lt;/li&gt;</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">"included"&gt;✅ Доступ 3 месяца&lt;/li&gt;</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">"included"&gt;✅ Тесты для самопроверки&lt;/li&gt;</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">"included"&gt; Чат выпускников (просмотр)&lt;/li&gt;</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">"excluded"&gt;❌ Без проверки ДЗ&lt;/li&gt;</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">"excluded"&gt;❌ Без личной обратной связи&lt;/li&gt;</p>
+<p class="p1">&lt;/ul&gt;</p>
+<p class="p1">&lt;button class=</p>
+<p class="p1">"cta-button buy-button"&gt;Купить базовый&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Standard (Popular) --&gt;</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"pricing-card popular"&gt;</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"card-header"&gt;</p>
+<p class="p1">&lt;h3&gt;СТАНДАРТ ⭐&lt;/h3&gt;</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"price"&gt;40 000 ₽ &lt;span class=</p>
+<p class="p1">"discount"&gt;24 000 ₽&lt;/span</p>
+<p class="p1">&lt;small&gt;Оптимальный выбор для результата&lt;/small&gt;</p>
+<p class="p1">&lt;div style=</p>
+<p class="p1">"background: rgba(255,255,255,0.2); padding: 0.5rem 1r</p>
+<p class="p1">Самый популярный (73% учеников)</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;ul class=</p>
+<p class="p1">"features-list"&gt;</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">"included"&gt;✅ Всё из БАЗОВОГО&lt;/li&gt;</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">"included"&gt;✅ Бонусные модули (психология, крипта)&lt;/li&gt;</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">"included"&gt;✅ Проверка ВСЕХ ДЗ&lt;/li&gt;</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">"included"&gt;✅ Доступ НАВСЕГДА&lt;/li&gt;</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">"included"&gt;✅ Еженедельные вебинары (4-6)&lt;/li&gt;</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">"included"&gt;✅ Групповые разборы сделок&lt;/li&gt;</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">"included"&gt;✅ Личный чат с поддержкой 24-48ч&lt;/li&gt;</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">"included"&gt;✅ Сертификат + стратегии&lt;/li&gt;</p>
+<p class="p1">&lt;/ul&gt;</p>
+<p class="p1">&lt;button class=</p>
+<p class="p1">"cta-button buy-button" style=</p>
+<p class="p1">"background: #28a745;"&gt;Ку</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- VIP --&gt;</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"pricing-card"&gt;</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"card-header"&gt;</p>
+<p class="p1">&lt;h3&gt;VIP/ПРЕМИУМ&lt;/h3&gt;</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"price"&gt;65 000 ₽ &lt;span class=</p>
+<p class="p1">&lt;small&gt;&lt;strong&gt;Только 5 мест!&lt;/strong&gt;&lt;/small&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;ul class=</p>
+<p class="p1">"features-list"&gt;</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">"included"&gt;✅ Всё из СТАНДАРТА&lt;/li&gt;</p>
+<p class="p1">"discount"&gt;39 000 ₽&lt;/span</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">&lt;li class=</p>
+<p class="p1">&lt;/ul&gt;</p>
+<p class="p1">&lt;button class=</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">"included"&gt;✅ 3-5 личных созвонов&lt;/li&gt;</p>
+<p class="p1">"included"&gt;✅ Разбор КАЖДОЙ твоей сделки&lt;/li&gt;</p>
+<p class="p1">"included"&gt;✅ VIP-чат (5-10 чел)&lt;/li&gt;</p>
+<p class="p1">"included"&gt;✅ Эксклюзивные мастер-классы&lt;/li&gt;</p>
+<p class="p1">"included"&gt;✅ Персональный план&lt;/li&gt;</p>
+<p class="p1">"included"&gt;✅ Постподдержка 2-4 нед&lt;/li&gt;</p>
+<p class="p1">"included"&gt;✅ Пожизненный доступ к обновлениям&lt;/li&gt;</p>
+<p class="p1">"included"&gt;✅ Гарантия результата&lt;/li&gt;</p>
+<p class="p1">"cta-button buy-button" style=</p>
+<p class="p1">"background: #1e3c72;"&gt;За</p>
+<p class="p1">&lt;!-- Testimonials --&gt;</p>
+<p class="p1">&lt;section id=</p>
+<p class="p1">"testimonials"&gt;</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"container"&gt;</p>
+<p class="p1">&lt;h2 style=</p>
+<p class="p1">"color: white;"&gt;Результаты учеников&lt;/h2&gt;</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"testimonials-grid"&gt;</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"testimonial"&gt;</p>
+<p class="p1">&lt;p&gt;"СТАНДАРТ тариф дал мне систему! Первая прибыль через 3 недели +15</p>
+<p class="p1">&lt;strong&gt;— Алексей К., +15% за месяц&lt;/strong&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"testimonial"&gt;</p>
+<p class="p1">&lt;p&gt;"VIP созвоны изменили всё. Теперь торгую по своим сетапам с R:R 1:</p>
+<p class="p1">&lt;strong&gt;— Мария С., +28% за 2 месяца&lt;/strong&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"testimonial"&gt;</p>
+<p class="p1">&lt;p&gt;"Базовый тариф за 15к дал базу лучше, чем платные курсы за 100к!"&lt;</p>
+<p class="p1">&lt;strong&gt;— Дмитрий П., первый профит&lt;/strong&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;!-- Final CTA --&gt;</p>
+<p class="p1">&lt;section id=</p>
+<p class="p1">"cta"&gt;</p>
+<p class="p1">&lt;div class=</p>
+<p class="p1">"container"&gt;</p>
+<p class="p1">&lt;h2&gt;Готов начать?&lt;/h2&gt;</p>
+<p class="p1">&lt;p style=</p>
+<p class="p1">"font-size: 1.3rem; margin-bottom: 2rem;"&gt;Скидка 40% действует тольк</p>
+<p class="p1">&lt;div style=</p>
+<p class="p1">"display: flex; gap: 1rem; justify-content: center; flex-wrap: wra</p>
+<p class="p1">&lt;button class=</p>
+<p class="p1">"cta-button" style=</p>
+<p class="p1">"padding: 18px 40px; font-size: 1.3rem;"</p>
+<p class="p1">СТАНДАРТ 24 000₽ ⭐</p>
+<p class="p1">&lt;/button&gt;</p>
+<p class="p1">&lt;button class=</p>
+<p class="p1">"cta-button" style=</p>
+<p class="p1">"padding: 18px 40px; font-size: 1.3rem;</p>
+<p class="p1">VIP 39 000₽ (5 мест)</p>
+<p class="p1">&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">// Smooth scroll for nav links</p>
+<p class="p1">document.querySelectorAll('a[href^=</p>
+<p class="p1">anchor.addEventListener('click'</p>
+<p class="p1">"#"]').forEach(anchor =&gt; {</p>
+<p class="p1">, function (e) {</p>
+<p class="p1">e.preventDefault();</p>
+<p class="p1">document.querySelector(this.getAttribute('href')).scrollIntoView({</p>
+<p class="p1">behavior: 'smooth'</p>
+<p class="p1">});</p>
+<p class="p1">});</p>
+<p class="p1">});</p>
+<p class="p1">// Animate cards on scroll</p>
+<p class="p1">const observer = new IntersectionObserver((entries) =&gt; {</p>
+<p class="p1">entries.forEach(entry =&gt; {</p>
+<p class="p1">if (entry.isIntersecting) {</p>
+<p class="p1">entry.target.style.opacity =</p>
+<p class="p1">'1';</p>
+<p class="p1">entry.target.style.transform =</p>
+<p class="p1">'translateY(0)';</p>
+<p class="p1">}</p>
+<p class="p1">});</p>
+<p class="p1">});</p>
+<p class="p1">document.querySelectorAll('</p>
+<p class="p1">el.style.opacity =</p>
+<p class="p1">'0';</p>
+<p class="p1">el.style.transform =</p>
+<p class="p1">el.style.transition =</p>
+<p class="p1">observer.observe(el);</p>
+<p class="p1">.pricing-card, .feature-card').forEach(el =&gt; {</p>
+<p class="p1">'translateY(30px)';</p>
+<p class="p1">'opacity 0.6s, transform 0.6s';</p>
+<p class="p1">});</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
